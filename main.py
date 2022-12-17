@@ -61,7 +61,7 @@ class encrypt(QMainWindow, Ui_Encryption):
     def cbcFunction(self):
         key = self.key_edit.toPlainText()
         original_name = filename[-1]
-        filename_out = original_name.split('.')[0] + "-aes"
+        filename_out = original_name.split('.')[0] + "-aes-cbc"
         start_time = time.time()
         process_aes_cbc(original_name, filename_out, key)
         self.enimg.setPixmap(QPixmap(filename_out + ".png"))
@@ -73,7 +73,7 @@ class encrypt(QMainWindow, Ui_Encryption):
     def ecbFunction(self):
         key = self.key_edit.toPlainText()
         original_name = filename[-1]
-        filename_out = original_name.split('.')[0] + "-aes"
+        filename_out = original_name.split('.')[0] + "-aes-ecb"
         start_time = time.time()
         process_aes_ecb(original_name, filename_out, key)
         self.enimg.setPixmap(QPixmap(filename_out + ".png"))

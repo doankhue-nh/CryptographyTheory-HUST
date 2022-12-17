@@ -48,7 +48,7 @@ class Ui_CryptographyTheory(object):
         self.team_label.setText(_translate("CryptographyTheory", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt;\">Cryptography Theory - Team07</span></p></body></html>"))
         self.en_button.setText(_translate("CryptographyTheory", "Encrypt"))
         self.de_button.setText(_translate("CryptographyTheory", "Decrypt"))
-        self.team_label_2.setText(_translate("CryptographyTheory", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">Class: 137307 - Teacher: Do TrongTuan</span></p></body></html>"))
+        self.team_label_2.setText(_translate("CryptographyTheory", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">Class: 137307 - Teacher: Do Trong Tuan</span></p></body></html>"))
 
 
 if __name__ == "__main__":
