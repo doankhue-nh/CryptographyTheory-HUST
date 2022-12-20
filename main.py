@@ -31,7 +31,6 @@ class encrypt(QMainWindow, Ui_Encryption):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setupUi(self)
-        self.second_label.setHidden(True)
         self.ecb_button.setHidden(True)
         self.cbc_button.setHidden(True)
         self.back_button.clicked.connect(self.backFunction)
@@ -67,8 +66,7 @@ class encrypt(QMainWindow, Ui_Encryption):
         self.enimg.setPixmap(QPixmap(filename_out + ".png"))
         end_time = time.time()
         elapsed_time = end_time - start_time
-        self.time_label.setText(str(elapsed_time))
-        self.second_label.setHidden(False)
+        self.time_label.setText(str(elapsed_time) + "s")
 
     def ecbFunction(self):
         key = self.key_edit.toPlainText()
@@ -79,8 +77,7 @@ class encrypt(QMainWindow, Ui_Encryption):
         self.enimg.setPixmap(QPixmap(filename_out + ".png"))
         end_time = time.time()
         elapsed_time = end_time - start_time
-        self.time_label.setText(str(elapsed_time))
-        self.second_label.setHidden(False)
+        self.time_label.setText(str(elapsed_time) + "s")
 
     def desFunction(self):
         key = self.key_edit.toPlainText()
@@ -91,8 +88,7 @@ class encrypt(QMainWindow, Ui_Encryption):
         self.enimg.setPixmap(QPixmap(filename_out + ".png"))
         end_time = time.time()
         elapsed_time = end_time - start_time
-        self.time_label.setText(str(elapsed_time))
-        self.second_label.setHidden(False)
+        self.time_label.setText(str(elapsed_time) + "s")
 
     def rc4Function(self):
         key = self.key_edit.toPlainText()
@@ -103,8 +99,7 @@ class encrypt(QMainWindow, Ui_Encryption):
         self.enimg.setPixmap(QPixmap(filename_out + ".png"))
         end_time = time.time()
         elapsed_time = end_time - start_time
-        self.time_label.setText(str(elapsed_time))
-        self.second_label.setHidden(False)
+        self.time_label.setText(str(elapsed_time) + "s")
 
 
 if __name__ == "__main__":
@@ -112,8 +107,8 @@ if __name__ == "__main__":
     mainWindow = menu()
     widget = QtWidgets.QStackedWidget()
     widget.addWidget(mainWindow)
-    widget.setFixedHeight(861)
-    widget.setFixedWidth(1347)
+    widget.setFixedHeight(931)
+    widget.setFixedWidth(1610)
     widget.show()
     app.exec_()
 

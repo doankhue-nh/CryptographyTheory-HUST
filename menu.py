@@ -14,29 +14,30 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_CryptographyTheory(object):
     def setupUi(self, CryptographyTheory):
         CryptographyTheory.setObjectName("CryptographyTheory")
-        CryptographyTheory.resize(1347, 861)
+        CryptographyTheory.resize(1602, 978)
         self.team_label = QtWidgets.QLabel(CryptographyTheory)
-        self.team_label.setGeometry(QtCore.QRect(220, 140, 881, 111))
+        self.team_label.setGeometry(QtCore.QRect(350, 310, 881, 111))
         self.team_label.setStyleSheet("color: rgb(170, 85, 255);\n"
-"font: bold")
+"font: bold;\n"
+"font-size: 30pt;")
         self.team_label.setObjectName("team_label")
         self.en_button = QtWidgets.QPushButton(CryptographyTheory)
-        self.en_button.setGeometry(QtCore.QRect(550, 360, 231, 71))
+        self.en_button.setGeometry(QtCore.QRect(680, 530, 231, 71))
         self.en_button.setStyleSheet("color: rgb(0, 0, 127);\n"
 "font-size: 15pt;\n"
 "font: bold")
         self.en_button.setObjectName("en_button")
         self.de_button = QtWidgets.QPushButton(CryptographyTheory)
-        self.de_button.setGeometry(QtCore.QRect(550, 460, 231, 71))
+        self.de_button.setGeometry(QtCore.QRect(680, 630, 231, 71))
         self.de_button.setStyleSheet("color: rgb(0, 0, 127);\n"
 "font-size: 15pt;\n"
 "font: bold")
         self.de_button.setObjectName("de_button")
         self.team_label_2 = QtWidgets.QLabel(CryptographyTheory)
-        self.team_label_2.setGeometry(QtCore.QRect(340, 250, 671, 61))
+        self.team_label_2.setGeometry(QtCore.QRect(470, 420, 671, 61))
         self.team_label_2.setStyleSheet("color: rgb(255, 0, 255);\n"
 "font: bold;\n"
-"font-size: 15pt")
+"font-size: 30pt")
         self.team_label_2.setObjectName("team_label_2")
 
         self.retranslateUi(CryptographyTheory)
